@@ -40,3 +40,18 @@ Run the container
 
 To view the project running in the container, open browser and input IP:80  
 > http://192.168.0.152:80  
+
+## Create Public Repo in DockerHub
+
+Click on the Create Repository button in the top right corner.  
+Add a name and description to the repo.  
+Select the Public visibility option.  
+Click Create.  
+
+## Authenticate with DockerHub via CLI
+
+In the terminal run:  
+> docker login
+
+Enter your username and password for DockerHub.  
+You can use an access token instead of your password.  
