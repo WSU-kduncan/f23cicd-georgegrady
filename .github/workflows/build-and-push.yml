@@ -25,7 +25,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: DOCKER_HUB_USERNAME/website
+          images: georgegrady/website
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
