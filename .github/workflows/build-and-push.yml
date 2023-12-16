@@ -28,11 +28,6 @@ jobs:
           images: georgegrady/website
           tags: |
             type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
-            type=semver,pattern={{major}}
-            type=sha
-            type=ref,event=branch
-            type=ref,event=pr
             type=edge,pattern=latest-${{ github.event_name }}
 
       - name: Build and push Docker image
